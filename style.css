@@ -92,6 +92,14 @@
         max-height: 100px;
       }
       
+.form{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
       form .gender__details .gender__title {
         font-size: 20px;
         font-weight: 500;
