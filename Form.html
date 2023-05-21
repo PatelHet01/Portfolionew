@@ -31,15 +31,15 @@
             </div>
             <div class="input__box">
               <span class="details">Phone Number(Whatsapp)</span>
-              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" required maxlength="10" value="+91">
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" required maxlength="13" value="+91">
             </div>
             <div class="input__box">
-              <span class="details">College</span>
+              <span class="Password">Password</span>
               <input type="password" placeholder="********" required>
             </div>
             <div class="input__box">
-              <span class="details">Confirm Password</span>
-              <input type="password" placeholder="********" required>
+              <span class="Password">Confirm Password</span>
+              <input type="password" placeholder="********" required >
             </div>
           </div>
           <div class="gender__details">
@@ -85,4 +85,19 @@
       </div>
 
       </body>
+      <script>
+        var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+      </script>
 </html>
