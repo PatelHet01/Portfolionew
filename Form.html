@@ -34,11 +34,11 @@
               <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" required maxlength="13" value="+91">
             </div>
             <div class="input__box">
-              <span class="Password">Password</span>
+              <span class="details">Password</span>
               <input type="password" placeholder="********" required>
             </div>
             <div class="input__box">
-              <span class="Password">Confirm Password</span>
+              <span class="details">Confirm Password</span>
               <input type="password" placeholder="********" required >
             </div>
           </div>
@@ -62,10 +62,10 @@
               </label>
             </div>
           </div>
-          
+          <br>
           <label for="colleges">Choose a college:</label>
-              <select id="colleges" name="colleges">
-                <option value="">Select a college</option>
+              <select id="colleges" name="colleges" class="details" >
+                <option value="" selected placeholder="Choose a College">Select College</option>
                 <option value="SCE">SAL College of Engineering</option>
                 <option value="SALITER">SAL Institute of Technology & Engineering Research</option>
                 <option value="SETI">SAL Engineering and Technical Institute</option>
@@ -76,6 +76,7 @@
                 <option value="SALSA">SAL School of Architecture</option>
                 <option value="SIDS">SAL Institute of Interior Design</option>
               </select>
+              
           
           
           <div class="button">
